@@ -33,7 +33,9 @@ Write your deduper function!
 Given a SAM file of uniquely mapped reads, remove all PCR duplicates (retain only a single copy of each read). Remember:
 - Samtools sort
 - Single-end reads
+    - Note: Consider reads on both the plus and minus strand.
 - Adjust for soft clipping
+    - Do you need to adjust for anything else?
 - Known UMIs (96 of them)
 - Considerations:
     - Millions of reads – avoid loading everything into memory!
